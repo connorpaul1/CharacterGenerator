@@ -42,12 +42,14 @@ namespace CharacterGenerator
 
                 var menuChoice = RaceMenu.DisplayMenu();
 
+                var raceName = String.Empty;
+
                 switch (menuChoice)
                 {
 
                     case Races.Dragonborn:
 
-                        string raceName = Races.Dragonborn.ToString();
+                        raceName = Races.Dragonborn.ToString();
 
                         Console.Clear();
                         Console.WriteLine($"You've chosen {raceName}");
@@ -70,6 +72,18 @@ namespace CharacterGenerator
                         Console.WriteLine("");
                         Console.WriteLine("");
                         Console.WriteLine("");
+
+                        
+                       var numberOption = RaceMenu.RaceMenuChoice(raceName);
+                        if (numberOption == 2)
+                        {
+                            RaceMenu.DisplayMenu();
+                        }
+                        else
+                        {
+                            Console.WriteLine("Valid Choice Selected");
+                            Thread.Sleep(1000);
+                        }
 
                         // run method RaceMenuChoice here, without clearing console
                         // store resulting playerRaceChoice variable
@@ -78,7 +92,7 @@ namespace CharacterGenerator
 
                     case Races.Dwarf:
 
-                        string raceName = Races.Dwarf.ToString();
+                        raceName = Races.Dwarf.ToString();
 
                         Console.Clear();
                         Console.WriteLine($"You've chosen {raceName}");
@@ -102,12 +116,13 @@ namespace CharacterGenerator
                         Console.WriteLine("");
                         Console.WriteLine("");
 
+                        RaceMenu.RaceMenuChoice(raceName);
 
                         break;
 
                     case Races.Elf:
 
-                        string raceName = Races.Elf.ToString();
+                        raceName = Races.Elf.ToString();
 
                         Console.Clear();
                         Console.WriteLine($"You've chosen {raceName}");
@@ -131,12 +146,13 @@ namespace CharacterGenerator
                         Console.WriteLine("");
                         Console.WriteLine("");
 
+                        RaceMenu.RaceMenuChoice(raceName);
 
                         break;
 
                     case Races.Gnome:
 
-                        string raceName = Races.Gnome.ToString();
+                        raceName = Races.Gnome.ToString();
 
                         Console.Clear();
                         Console.WriteLine($"You've chosen {raceName}");
@@ -160,12 +176,13 @@ namespace CharacterGenerator
                         Console.WriteLine("");
                         Console.WriteLine("");
 
+                        RaceMenu.RaceMenuChoice(raceName);
 
                         break;
 
                     case Races.Half_Elf:
 
-                        string raceName = Races.Half_Elf.ToString();
+                        raceName = Races.Half_Elf.ToString();
 
                         Console.Clear();
                         Console.WriteLine($"You've chosen {raceName}");
@@ -189,12 +206,13 @@ namespace CharacterGenerator
                         Console.WriteLine("");
                         Console.WriteLine("");
 
+                        RaceMenu.RaceMenuChoice(raceName);
 
                         break;
 
                     case Races.Half_Orc:
 
-                        string raceName = Races.Half_Orc.ToString();
+                        raceName = Races.Half_Orc.ToString();
 
                         Console.Clear();
                         Console.WriteLine($"You've chosen {raceName}");
@@ -218,12 +236,13 @@ namespace CharacterGenerator
                         Console.WriteLine("");
                         Console.WriteLine("");
 
+                        RaceMenu.RaceMenuChoice(raceName);
 
                         break;
 
                     case Races.Halfling:
 
-                        string raceName = Races.Halfling.ToString();
+                        raceName = Races.Halfling.ToString();
 
                         Console.Clear();
                         Console.WriteLine($"You've chosen {raceName}");
@@ -247,12 +266,13 @@ namespace CharacterGenerator
                         Console.WriteLine("");
                         Console.WriteLine("");
 
+                        RaceMenu.RaceMenuChoice(raceName);
 
                         break;
 
                     case Races.Human:
 
-                        string raceName = Races.Human.ToString();
+                        raceName = Races.Human.ToString();
 
                         Console.Clear();
                         Console.WriteLine($"You've chosen {raceName}");
@@ -276,13 +296,14 @@ namespace CharacterGenerator
                         Console.WriteLine("");
                         Console.WriteLine("");
 
+                        RaceMenu.RaceMenuChoice(raceName);
 
                         break;
 
 
                     case Races.Tiefling:
 
-                        string raceName = Races.Tiefling.ToString();
+                        raceName = Races.Tiefling.ToString();
 
                         Console.Clear();
                         Console.WriteLine($"You've chosen {raceName}");
@@ -306,6 +327,7 @@ namespace CharacterGenerator
                         Console.WriteLine("");
                         Console.WriteLine("");
 
+                        RaceMenu.RaceMenuChoice(raceName);
 
                         break;
 

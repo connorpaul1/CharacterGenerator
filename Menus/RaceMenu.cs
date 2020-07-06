@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Threading;
 using static CharacterGenerator.enums;
 
 namespace CharacterGenerator.Menus
@@ -8,7 +10,6 @@ namespace CharacterGenerator.Menus
     public class RaceMenu
     {
         public static Races DisplayMenu()
-
         {
             Console.Clear();
             Console.WriteLine($"Choose your Race: ");
@@ -28,35 +29,35 @@ namespace CharacterGenerator.Menus
 
         public static int RaceMenuChoice(string raceName)
         {
+
             Console.WriteLine($"Finalize {raceName} as your race?");
 
             Console.WriteLine("1. Continue");
             Console.WriteLine("2. Go Back");
-            int.TryParse(Console.ReadLine(), out var raceMenuChoice);
+            int.TryParse(Console.ReadLine(), out var playerRaceChoice);
 
-            if (raceMenuChoice == 1)
+            if (playerRaceChoice == 1)
             {
                 string playerRace = raceName;
                 Console.WriteLine($"You are now a {playerRace}!");
-                break;
             }
             // Need to program next step > choose character class that proceeds from here
 
-            if (raceMenuChoice == 2)
+            if (playerRaceChoice == 2)
             {
                 Console.WriteLine("Headed back to Race menu...");
                 Thread.Sleep(500);
-
+                return 2;
             }
             // Application exits without looping to race menu, need to loop back to race menu with choices
 
             else
             {
                 Console.WriteLine("Invalid menu selection, please retry.");
-
+                return 0;
             }
             // Exception Here that pops up if user enters anything besides a number, need to handle
-            break;
+            
 
         }
 

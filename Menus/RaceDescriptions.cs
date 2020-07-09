@@ -11,9 +11,9 @@ namespace CharacterGenerator
     class RaceDescriptions
     {
 
-        public static void DisplayRaceDescription()
+        public static void DisplayRaceDescription(Races race)
         {
-            int choice = 1;
+            int choice = (int)race;
             while (choice != Enum.GetNames(typeof(Races)).Length + 1)
             {
 

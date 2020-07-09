@@ -20,6 +20,16 @@ namespace CharacterGenerator
 
         }
 
+        public enum Classes
+        {
 
+
+        }
+
+        public enum Backgrounds
+        {
+
+
+        }
     }
 }

@@ -20,7 +20,14 @@ namespace CharacterGenerator
             Console.WriteLine($"3. List exising Characters");
             Console.WriteLine($"{Environment.NewLine} X: Exit Tool");
 
+            Console.ReadLine();
 
+            var mainMenuChoice = 
+
+            if (true)
+            {
+
+            }
 
         }
 

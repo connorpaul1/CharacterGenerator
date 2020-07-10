@@ -41,7 +41,6 @@ namespace CharacterGenerator
             Thread.Sleep(1000);
             Console.WriteLine("");
 
-            // I want to move each submenu, like "race selection" into its own individual class and create a corresponding method, then call on the method created seperately back into the "Main" method.
 
             var race = MainMenu.DisplayMenu();
             RaceDescriptions.DisplayRaceDescription(race);

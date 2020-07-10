@@ -22,13 +22,29 @@ namespace CharacterGenerator
 
         public enum Classes
         {
-
+            Barbarian,
+            Bard,
+            Cleric,
+            Druid,
+            Fighter,
+            Monk,
+            Paladin,
+            Ranger,
+            Rogue,
+            Sorcerer,
+            Warlock,
+            Wizard,
 
         }
 
         public enum Backgrounds
         {
-
+            Acolyte,
+            Criminal_Spy,
+            Folk_Hero,
+            Noble,
+            Sage,
+            Soldier,
 
         }
     }
